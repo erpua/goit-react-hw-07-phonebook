@@ -35,17 +35,16 @@ BASE
   "eslint --fix"] }
 - npm start
 
-ADDITIONAL
+ADDITIONAL ( + DEVTOOLS)
 
-- npm install --save-dev sass
-- create .env=> SASS_PATH=src
+- npm install --save-dev react-router-dom
+- npm install --save-dev axios
+- npm install --save-dev json-server
 - npm install --save-dev uuid
-- npm install --save-dev redux
 - npm install --save-dev react-redux ( to contact our react component with redux
   library ). Has <Provider /> component, that wraps ALL our application and,
   throuth context, passes additional functionality ( <React.StrictMode>
   <Provider store={store}> <App /> </Provider> </React.StrictMode>)
-- DEVTOOLS
 - http://extension.remotedev.io/ => docs
 - https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
   => REDUX DEVTOOLS
@@ -53,13 +52,14 @@ ADDITIONAL
 - in store.js => import { composeWithDevTools } from 'redux-devtools-extension';
 - npm install --save-dev @reduxjs/toolkit
 - npm install --save-dev redux-logger
+- npm install --save-dev redux-persist
 
 DEPLOY AT GITHUB
 
 - npm install --save-dev gh-pages
 - in package.json => - scripts => "homepage":
   "https://myusername.github.io/my-app"add to package.json => change to
-  =>"homepage": "https://erpua.github.io/goit-react-hw-06-phonebook";
+  =>"homepage": "https://erpua.github.io/goit-react-hw-07-phonebook";
 - in package.json => add scripts: "predeploy": "npm run build", "deploy":
   "gh-pages -d build" => "scripts": { "start": "react-scripts start", "build":
   "react-scripts build", "test": "react-scripts test", "eject": "react-scripts
@@ -69,3 +69,5 @@ DEPLOY AT GITHUB
 - add repository root to GitHub Website link
 
 ---
+
+\{^\_^}/ hi!

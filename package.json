@@ -2,6 +2,7 @@
   "name": "goit-react-hw-07-phonebook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://erpua.github.io/goit-react-hw-07-phonebook",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
@@ -15,7 +16,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "api-server": "json-server --port 4040 --delay 300 --watch db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,10 +40,20 @@
     ]
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "axios": "^0.21.1",
+    "gh-pages": "^3.1.0",
     "husky": "^4.3.7",
+    "json-server": "^0.16.3",
     "lint-staged": "^9.4.2",
     "modern-normalize": "^1.0.0",
     "prettier": "^2.2.1",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "uuid": "^8.3.2"
   }
 }
